@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 body{
     font-family: Arial, sans-serif;
     margin: 0;
@@ -60,3 +61,67 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500    ;
 }
+=======
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+.H12{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+.h21{  
+    font-size: 24px;
+    text-align: center;
+}
+.h31{
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+.h43{
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+.block-hex{
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.block-rgb{
+    background-color: rgb(255,162,0);
+    color: rgb(0,0,0);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.block-rgba{
+    background-color: rgba(0,0,255,0.5);
+    color:rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.ul1{
+    background-color: rebeccapurple;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.ul2{
+    background-color: purple;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500    ;
+}
+>>>>>>> Stashed changes
