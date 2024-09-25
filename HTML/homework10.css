@@ -1,0 +1,134 @@
+/* Стиль для формы */
+.form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 8px;
+    border-radius: 14px;
+    background-color: lightblue;
+}
+
+.form_Label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form_Input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 7px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Псевдокласс :focus - изменяет стиль элемента при фокусе */
+.form_Input:focus {
+    border-color: lightblue;
+    box-shadow: 0 0 5px rgba(0, 123, 225, 0.5);
+}
+
+.form_button {
+    box-shadow: 0 0;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Псевдоклассы :hover и :active - стили при наведении и нажатии */
+.form_button:hover {
+    background-color: #0056b3;
+}
+
+.form_button:active {
+    background-color: #003d80;
+}
+
+.list {
+    list-style: none;
+    padding: 2px;
+}
+
+.list_item {
+    padding: 10px;
+    border: 1px solid gray;
+    margin-bottom: 5px;
+}
+
+/* Псевдоклассы :first-child и :last-child - стили для первых и последних элементов списка */
+.list_item:first-child {
+    background-color: #e0f7fa;
+    font-weight: bold;
+}
+
+.list_item:last-child {
+    background-color: #ffe0b2;
+    font-style: italic;
+}
+
+.list_item:nth-child(even) {
+    background-color: lightblue;
+}
+
+.list_item:nth-child(3) {
+    background-color: #d1c4e9;
+    color: #fff;
+}
+
+/* Стили для ссылок */
+a:link {
+    color: #0000d0;
+    padding: 2px;
+}
+
+a:focus {
+    color: red; /* Цвет при фокусе */
+    padding: 2px;
+}
+
+a:hover {
+    background: #786b59; /* Фон и цвет текста при наведении */
+    color: #ffe;
+}
+
+a:first-child {
+    background-color: lightgray; /* Стиль для первой ссылки */
+    padding: 2px;
+}
+
+a:last-child {
+    background-color: lightpink; /* Стиль для последней ссылки */
+    padding: 2px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.content-block {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+/* Псевдокласс :first-child для заголовка в блоке */
+.content-block h2:first-child {
+    color: #007BFF; 
+}
+
+/* Цвет заголовка при наведении */
+.content-block h2:first-child:hover {
+    color: #FF5733; 
+}
+
+/* Стиль для последней ссылки при фокусе */
+.content-block a:last-child:focus {
+    outline: 3px solid #28A745; 
+    background-color: #DFFFD6; 
+}
