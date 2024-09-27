@@ -1,0 +1,25 @@
+.BoxShadow{
+    width: 250px;
+    height: 200px;
+    box-shadow: 25px 20px 12px black /* если легко говорить то это тень каробки: 1) 25пх это x-Горизонталь
+    2)20пх это y-Вертикаль а 3) это размытье  */
+}
+h1{
+    text-shadow: 7px 9px 12px black;
+}
+h2{
+    text-shadow: 7px 9px 12px black;
+}
+
+.linear-gradient{
+    width: 200px;
+    height: 100px;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);  /* позволяют создавать плавные переходы между двумя или более цветами */
+}
+.radial-gradien{
+    width: 250px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 20px;
+    background: radial-gradient(circle, #ff7e5f, #feb47b, #ff7e5f); /* создает градиент, изменяющий цвета по кругу или эллипсу */
+}
