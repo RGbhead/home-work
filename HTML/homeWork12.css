@@ -1,0 +1,77 @@
+.blockelement {
+    display: block;
+    background-color: lightcoral;
+}
+
+.inlineelement {
+    display: inline;
+    background-color: lightblue;
+}
+
+.flexelement {
+    display: flex;
+    background-color: lightgreen;
+    height: 50px;
+}
+
+.flex-container {
+    display: flex;
+    background-color: lightgrey;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.flex-container div:nth-child(1) {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100px;
+}
+
+.flex-container div:nth-child(2) {
+    flex: 2 1 150px;
+}
+
+.flex-container div:nth-child(3) {
+    flex: 1 2 200px;
+}
+.flex-container {
+    display: flex;
+}
+
+.flex-container div:nth-child(1) {
+    flex: 0 0 50%;
+}
+
+.flex-container div:nth-child(2) {
+    flex: 1;
+}
+
+.flex-container div:nth-child(3) {
+    flex: 0 0 100px;
+}
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.nav-menu a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+}
+.card-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 calc(33.333% - 10px);
+    margin: 5px;
+    background-color: lightpink;
+    padding: 20px;
+}
