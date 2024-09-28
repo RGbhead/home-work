@@ -1,28 +1,17 @@
-
+@font-face {
+  font-family: "MyFont";
+  src: url(Noto_Sans_JP/NotoSansJP-VariableFont_wght.ttf);
+}
 h1{
-    font-family: "Edu AU VIC WA NT Dots", cursive;
-    font-optical-sizing: auto;
-    font-weight:300;
-    font-style: normal;
+  color: rebeccapurple;
+  font-family: Myfont;
 }
-p{
-    font-family: "Edu AU VIC WA NT Dots", cursive;
-    font-optical-sizing: auto;
-    font-weight:300;
-    font-style: normal;
-}
-.p2{
- font-family: "Noto Sans JP", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-}
-.p3{
-  font-family: "Jacquarda Bastarda 9", serif;
-  font-weight: 400;
-  font-style: normal;
+@font-face {
+  font-family: Font2;
+  src: url(fonts/EduAUVICWANTDots-VariableFont_wght.ttf);
 }
 
-a{
-    text-decoration: none;
+p{
+  color: red;
+  font-family: Font2;
 }
