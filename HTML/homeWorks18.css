@@ -1,0 +1,44 @@
+.animation-div{
+    width: 100px;
+    height: 100px;
+    background:linear-gradient(red,blue); 
+    transform: rotate(90degx); /* rotate делает поворот в угол по типу 90deg */
+    transform: scale(2); /* scale делает Больше или меньше */
+    transform: translateX(200px); /* translate (X,Y) Двигает движение в право или влево */
+    transform: skew(20deg); /* делает наклон  */
+}
+.animation-div2{
+    width: 100px;
+    height: 100px;
+    background: #3498db;
+    color: white;
+    display: flex;
+    justify-content: center;
+    transition: all 1s ease; /* Здесь утанавливается продолжительность и тип плавности */
+}
+.animation-div2:hover{
+    background-color: #2ecc71;
+    transform: rotate(90deg) scale(1.1); /* а Здесь изменение цвета, Поворот и мастабирование при навидений */
+}
+.animation-div3{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 100%;
+    animation: ball 2s infinite; /* здесь infinite это бесконечно */
+}
+@keyframes ball{ /* без keyframes все работать не будет */
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    
+    }
+    50%{
+        transform:scale(1.5);
+        opacity: 0.5;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
