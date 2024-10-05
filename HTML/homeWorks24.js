@@ -62,19 +62,19 @@ switch (day) {
         console.log("Некорректное значение");
 }
 // Задание 6 //
-let firstNumber = prompt("Введите первое число:");
-let secondNumber = prompt("Введите второе число:");
-
-firstNumber = Number(firstNumber);
-secondNumber = Number(secondNumber);
+let firstNumber = parseFloat(prompt("Введите первое число:"));
+let secondNumber = parseFloat(prompt("Введите второе число:"));
 
 if (firstNumber === secondNumber) {
-    console.log("Числа равны");
+    alert("Числа равны");
 } else {
-    
-    const result = (firstNumber > secondNumber) 
-    console.log(result);
+    if (firstNumber > secondNumber) {
+        alert("Первое число больше");
+    } else {
+        alert("Второе число больше");
+    }
 }
+
 
 // Задание 7 //
 function getSeason(month) {
