@@ -1,69 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="Dom.js"></script>
+    <title>DOM Practice</title>
     <style>
-        .box2 {
-            width: 100px;
-            height: 100px;
-            background-color: gray;
-            margin: 10px;
-            display: inline-block;
-        }
-        
         .box {
             width: 100px;
             height: 100px;
-            background-color: gray;
             margin: 10px;
-            display: inline-block;
+            background-color: lightgray;
+        }
+        
+        .highlight {
+            font-weight: bold;
         }
     </style>
 </head>
 
 <body>
-    <h1>Задание 1</h1>
-    <p id="massage">Привет,мир!</p>
-    <h1>Задание 2</h1>
+    <!-- Задание 1-->
+    <p id="message">Привет, мир!</p>
+    <!-- Задание 2-->
     <div class="box"></div>
     <div class="box"></div>
     <div class="box"></div>
-    <script>
-        var boxes = document.getElementsByClassName("box");
-        for (var i = 0; i < boxes.length; i++) {
-            boxes[i].style.backgroundColor = "green";
-        }
-    </script>
-    <h1>Задание 3</h1>
-    <div class="box2"></div>
-    <div class="box2"></div>
-    <div class="box2"></div>
+
+    <!-- Задание 3-->
+    <div class="box"></div>
     <p id="text"></p>
-    <script>
-        document.querySelector("#text").textContent = "Привет, мир!";
 
-        var boxes = document.querySelectorAll(".box2");
-        boxes.forEach(function(box2) {
-            box2.style.backgroundColor = "green";
-        });
-    </script>
-    <h1>Зaдание 4</h1>
-    <p class="highlight">Абзац 1</p>
-    <p>Абзац 2</p>
-    <p class="highlight">Абзац 3</p>
-    <p>Абзац 4</p>
-    <p class="highlight">Абзац 5</p>
+    <!-- Задание 4-->
+    <p class="highlight">Это выделенный текст 1</p>
+    <p>Обычный текст</p>
+    <p class="highlight">Это выделенный текст 2</p>
+    <p>Еще один обычный текст</p>
 
     <script>
-        var highlightedParagraphs = document.querySelectorAll(".highlight");
-        highlightedParagraphs.forEach(function(p) {
-            p.style.color = "red";
+        // Задание 1
+        const messageElement = document.getElementById('message');
+        messageElement.textContent = "Добро пожаловать в JavaScript!";
+
+        // Задание 2
+        const boxes = document.getElementsByClassName('box');
+        for (let i = 0; i < boxes.length; i++) {
+            boxes[i].style.backgroundColor = 'green';
+        }
+
+        // Задание 3
+        const textElement = document.querySelector('#text');
+        textElement.textContent = 'Текст изменен с помощью querySelector';
+
+        const allBoxes = document.querySelectorAll('.box');
+        allBoxes.forEach(box => {
+            box.style.border = '2px solid blue';
+        });
+
+        // Задание 4
+        const highlightedParagraphs = document.querySelectorAll('.highlight');
+        highlightedParagraphs.forEach(p => {
+            p.style.color = 'red';
         });
     </script>
+
 </body>
 
 </html>
